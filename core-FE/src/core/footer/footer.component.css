@@ -1,0 +1,15 @@
+:host {
+    height: 50px;
+    color: #ffffff;
+    width: 100%;
+    font-size: small;
+    display: flex;
+    align-items: flex-end;
+    background: gray;
+    justify-content: center;
+
+}
+
+footer {    
+}
+
