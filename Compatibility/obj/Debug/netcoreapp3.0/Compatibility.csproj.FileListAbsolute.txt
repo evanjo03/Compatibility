@@ -16,3 +16,21 @@ C:\workspace\CompatibilityGame\Compatibility\obj\Debug\netcoreapp3.0\Compatibili
 C:\workspace\CompatibilityGame\Compatibility\obj\Debug\netcoreapp3.0\Compatibility.RazorTargetAssemblyInfo.cache
 C:\workspace\CompatibilityGame\Compatibility\obj\Debug\netcoreapp3.0\Compatibility.dll
 C:\workspace\CompatibilityGame\Compatibility\obj\Debug\netcoreapp3.0\Compatibility.pdb
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\obj\Debug\netcoreapp3.0\Compatibility.dll
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\obj\Debug\netcoreapp3.0\Compatibility.pdb
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\bin\Debug\netcoreapp3.0\Compatibility.exe
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\bin\Debug\netcoreapp3.0\Compatibility.deps.json
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\bin\Debug\netcoreapp3.0\Compatibility.runtimeconfig.json
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\bin\Debug\netcoreapp3.0\Compatibility.runtimeconfig.dev.json
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\bin\Debug\netcoreapp3.0\Compatibility.dll
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\bin\Debug\netcoreapp3.0\Compatibility.pdb
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\obj\Debug\netcoreapp3.0\Compatibility.csprojAssemblyReference.cache
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\obj\Debug\netcoreapp3.0\staticwebassets\Compatibility.StaticWebAssets.Manifest.cache
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\obj\Debug\netcoreapp3.0\staticwebassets\Compatibility.StaticWebAssets.xml
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\obj\Debug\netcoreapp3.0\Compatibility.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\obj\Debug\netcoreapp3.0\Compatibility.AssemblyInfoInputs.cache
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\obj\Debug\netcoreapp3.0\Compatibility.AssemblyInfo.cs
+C:\Users\Zach Stekel\Source\Repos\Compatibility\Compatibility\obj\Debug\netcoreapp3.0\Compatibility.RazorTargetAssemblyInfo.cache

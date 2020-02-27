@@ -35,5 +35,27 @@ namespace Compatibility.Controllers
             })
             .ToArray();
         }
+
+        //Endpoint for getting specific image
+        //Endpoint for submitting rankings
+        //Endpoint for getting ranking results
+        //Endpoint for setting up teams
+        //Endpoint for setting up games
+        //Endpoint for new round word
+
+
+
+        //Model for Player
+        //Model for Images
+        //Model for Teams
+        //Model for Games
+
+
+        //Page for login
+        //Start a game
+        //Page for game board
+        //Page for all images
+        //Page for rankings
+        //Page for results
     }
 }
