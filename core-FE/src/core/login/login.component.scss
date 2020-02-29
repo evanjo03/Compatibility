@@ -1,0 +1,57 @@
+:host {
+    width: 40%;
+    height: 50%;
+
+    .login-card-container {
+        background: #ffffff;
+        border: 1px solid #c8c8c8;
+        padding: 1em;
+    }
+
+    .tab {
+        padding: .25em;
+    }
+    
+    label {
+        font-size: 12px;
+    }
+    
+    .login-card-header {
+        padding: 0 0 1em 1em;
+        width: 100%;
+        font-weight: 700;
+    }
+    
+    .formControl {
+        padding: 1em;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    ::ng-deep .tab-style a {
+        padding: 0px !important;
+    }
+    
+    button {
+        margin: 1em;
+    }
+
+    @media screen and (max-width: 450px) {
+
+        .login-card-header span {
+            font-size: 10px;
+            padding: none;
+        }
+        ::ng-deep {
+            .tab-style li, .tab-style a, .tab-style div  {
+                width: 100%;
+            }
+            .tab-style li a {
+                text-align: center;
+            }
+        }
+    }
+}
+
