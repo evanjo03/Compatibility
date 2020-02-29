@@ -1,15 +1,45 @@
-<div class="login-card-header">
-    Play
-</div>
-<div class="login-card">
-    <form formGroupName="userForm">
-        <div class="formControl">
-              <input type="text" formControlName="username">
+<p-tabMenu styleClass='tab-style' [model]="items" [activeItem]="items[0]">
+    <ng-template pTemplate="item" let-item let-i="index">
+        <div class='tab' (click)="onMenuItemClick(item)">
+            <span class="ui-menuitem-icon" [ngClass]="item.icon"></span>
+            <span class="ui-menuitem-text">
+                {{item.label}}
+            </span>
         </div>
-       <div class="formControl">
-            <input type="text" formControlName="roomCode">
-          
-       </div>
-          <button>Play</button>
-    </form>
+    </ng-template>
+</p-tabMenu>
+<div class="login-card-container">
+    <div class="login-card-header">
+        <span>Compatibility</span>
+    </div>
+    <div class="login-card">
+        <form *ngIf="joinExistingGame; else newGame" [formGroup]="joiningUserForm">
+            <div class="formControl">
+                <span class="ui-float-label">
+                    <input id="float-input" formControlName='username' type="text" size="30" pInputText> 
+                    <label for="float-input">Player Name: </label>
+                </span>
+            </div>
+    
+           
+           <div class="formControl">
+                <span class="ui-float-label">
+                    <input id="float-input" formControlName='roomCode' type="text" size="30" pInputText> 
+                    <label for="float-input">Room Code: </label>
+                </span>
+           </div>
+            <button pButton type="button" (click)='onJoinLobbyClick()' [disabled]="!joiningUserForm.valid" label="Join Lobby"></button>
+        </form>
+    </div>
 </div>
+<ng-template #newGame>
+    <form [formGroup]="startNewGameForm">
+        <div class="formControl">
+            <span class="ui-float-label">
+                <input id="float-input" formControlName='username' type="text" size="30" pInputText> 
+                <label for="float-input">Player Name: </label>
+            </span>
+        </div>
+        <button pButton type="button" (click)='onStartNewGameClick()' label="Start New Game" [disabled]="!startNewGameForm.valid"></button>
+    </form>
+</ng-template>
