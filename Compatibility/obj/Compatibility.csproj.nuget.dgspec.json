@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zach Stekel\\Source\\Repos\\Compatibility\\Compatibility\\Compatibility.csproj": {}
+    "C:\\workspace\\CompatibilityGame\\Compatibility\\Compatibility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zach Stekel\\Source\\Repos\\Compatibility\\Compatibility\\Compatibility.csproj": {
+    "C:\\workspace\\CompatibilityGame\\Compatibility\\Compatibility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zach Stekel\\Source\\Repos\\Compatibility\\Compatibility\\Compatibility.csproj",
+        "projectUniqueName": "C:\\workspace\\CompatibilityGame\\Compatibility\\Compatibility.csproj",
         "projectName": "Compatibility",
-        "projectPath": "C:\\Users\\Zach Stekel\\Source\\Repos\\Compatibility\\Compatibility\\Compatibility.csproj",
-        "packagesPath": "C:\\Users\\Zach Stekel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zach Stekel\\Source\\Repos\\Compatibility\\Compatibility\\obj\\",
+        "projectPath": "C:\\workspace\\CompatibilityGame\\Compatibility\\Compatibility.csproj",
+        "packagesPath": "C:\\Users\\johnw\\.nuget\\packages\\",
+        "outputPath": "C:\\workspace\\CompatibilityGame\\Compatibility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Zach Stekel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\johnw\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,24 +47,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.0.2, 3.0.2]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -73,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FormBuilder, ReactiveFormsModule } from '@angular/forms'
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { LoginComponent } from 'src/core/login/login.component';
 import { AppComponent } from './app.component';
@@ -15,6 +16,8 @@ import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { TabMenuModule } from 'primeng/tabmenu';
+
+
 
 const appRoutes: Routes = [
   { path: 'lobby', component: LobbyComponent },
@@ -42,7 +45,8 @@ const appRoutes: Routes = [
     InputTextModule,
     TabMenuModule,
     RouterModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [FormBuilder],
   bootstrap: [AppComponent]

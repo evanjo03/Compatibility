@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MenuItem } from 'primeng/api';
 import { Constants } from 'src/constants';
 import { Router } from '@angular/router';
+import { EndpointConfigService } from '../../app/endpoint-config.service';
 
 @Component({
   selector: 'app-login',
@@ -12,15 +13,16 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   @Input() isLoggedIn: boolean;
-  
-  items: MenuItem[];
-  activeItem: MenuItem;
 
-  joinExistingGame: boolean = true;
-  showValidators: boolean = false;
+  private items: MenuItem[];
+  private activeItem: MenuItem;
+  private joinExistingGame = true;
+  private showValidators = false;
 
-  constructor(private fb: FormBuilder, private router: Router) {}
-  
+  constructor(private fb: FormBuilder,
+              private router: Router,
+              private endpointConfigService: EndpointConfigService) {}
+
   joiningUserForm = this.fb.group({
     username: ['', [Validators.required, Validators.maxLength(18)]],
     roomCode: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(4)]]
@@ -35,8 +37,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.joiningUserForm.valueChanges.subscribe(value => {
       console.log(value);
-    })
-
+    });
 
     this.items = [
       {label: Constants.join, icon: 'fa fa-play'},
@@ -61,11 +62,20 @@ export class LoginComponent implements OnInit {
     console.log(this.joiningUserForm);
     alert(`Joining game with username ${this.joiningUserForm.value.username}`+
     `and room code ${this.joiningUserForm.value.roomCode}`);
-    this.router.navigateByUrl('/lobby');
+    // this.router.navigateByUrl('/lobby').then(r => );
+  }
+
+  private routeDataConfig(data, routeUrl) {
+    const route = this.router.config.find(r => r.path === routeUrl);
+    route.data = { gameId: data };
+
+    this.router.navigateByUrl(routeUrl);
   }
 
   onStartNewGameClick() {
-    console.log(this.startNewGameForm)
+    this.endpointConfigService.getNewGameId().subscribe(data => {
+    this.routeDataConfig(data.gameId, 'lobby');
+    }, (err) => console.log(err));
   }
-  
+
 }
